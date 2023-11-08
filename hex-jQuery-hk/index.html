@@ -60,7 +60,7 @@
               <!-- Slides -->
               <div class="swiper-slide"><img src="images/bg_sw1.png" alt="sw1"> <h2>六角學院<br>
                 讓您奠定良好的前端基礎</h2></div>
-              <div class="swiper-slide"><img src="images/bg_sw2.png" alt="sw2"><h2 class="w">六角學院<br>
+              <div class="swiper-slide"><img src="images/bg_sw2.png" alt="sw2"><h2 class="white">六角學院<br>
                 專為 0 經驗新手設計課程</h2></div>
               <div class="swiper-slide"><img src="images/bg_sw3.png" alt="sw3"><h2>六角學院<br>
                 線上帶你寫程式不卡關</h2></div>
@@ -78,15 +78,15 @@
 
     
         <ul class="courseList">
-            <li><a class="example-image-link" href="images/html-b.png" data-lightbox="example-set" data-title=""><img class="example-image" src="images/html_icon.svg" alt=""/></a>
+            <li><a class="example-image-link" href="images/html-b.png" data-lightbox="example-set" data-title=""><img class="example-image" src="images/html_icon.svg" alt="html"/></a>
                 <h4>Html 5基礎教學</h4>
                 <p>主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
             </li>
-            <li><a class="example-image-link" href="images/rwd-b.png" data-lightbox="example-set" data-title=""><img class="example-image" src="images/rwd_icon.svg" alt="" /></a>
+            <li><a class="example-image-link" href="images/rwd-b.png" data-lightbox="example-set" data-title=""><img class="example-image" src="images/rwd_icon.svg" alt="rwd" /></a>
                 <h4>響應式網站設計</h4>
                 <p>響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。 </p>
             </li>
-            <li><a class="example-image-link" href="images/jquery-b.png" data-lightbox="example-set" data-title=""><img class="example-image" src="images/jquery_icon.svg" alt="" /></a>
+            <li><a class="example-image-link" href="images/jquery-b.png" data-lightbox="example-set" data-title=""><img class="example-image" src="images/jquery_icon.svg" alt="jquery" /></a>
                 <h4>jQuery 實戰教學</h4>
                 <p>本課程有以下特色：</p>
                     <ul class="jqlist">
@@ -157,31 +157,32 @@
     <div class="submitSec">
         <h3>對我們課程有興趣嗎？<br>歡迎留下您的資料</h3>
         <form class="studentInfo">
-            <div id="submitLeft">
+            <div class="submitLeft" id="submitLeft">
                 <textarea name="message" id="message" placeholder="想更了解更多資訊嗎？"></textarea>
             </div>
-            <div id="submitRight">
+            <div class="submitRight" id="submitRight">
                 <label for= "name" >姓名</label>
-                <input type="text" name="name" id="name" placeholder="六角講師"><br>
-                <label for= "phone" >電話</label><br>
-                <input type="tel" name="phone" id="phone" placeholder="0987-654-321"><br>
-                <label for= "mail" >信箱</label><br>
-                <input type="email" name="mail" id="mail" placeholder="example@hexschool.com"><br>
-                <input type="submit" value="送 出" id="submitBtn">
+                <input type="text" name="name" id="name" placeholder="六角講師">
+                <label for= "phone" >電話</label>
+                <input type="tel" name="phone" id="phone" placeholder="0987-654-321">
+                <label for= "mail" >信箱</label>
+                <input type="email" name="mail" id="mail" placeholder="example@hexschool.com">
+                <input type="submit" value="送 出" class="submitBtn" id="submitBtn">
             </div>   
         </form>
     </div>   
 </main>
     <footer class="contactUs">
-        <img src="images/hexschool-logo.svg" alt="Logo">
+        <a href="#"><h1>hex school</h1></a>
             <ul>
                 <li>聯絡我們： <a href="mailto:service@hexschool.com">service@hexschool.com</a></li>
                 <li>電話：<a href="tel:+886-987-654-321">0987-654-321</a></li>
             </ul>
     </footer>
     <script src="js/jQuery 3.7.1.js"></script>
-    <script src="js/all.js"></script>
-    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/lightbox.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--swiper-->
+    <script src="js/all.js"></script>
+    
 </body>
 </html>

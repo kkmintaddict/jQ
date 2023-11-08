@@ -45,28 +45,30 @@ header .snsBar .border{
     filter: brightness(135%);
 }
 .navBar{ 
-    padding: 25px 40px 25px 50px;
+    padding: 0px 40px 0px 50px;
     background: #FFF;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);  
     display: flex;
     justify-content:space-between;
+    align-items: center;
 }
 .navBar h1{ 
-    text-indent: -9999px; /*把字推出去出*/
+    font-size: 40px;
+    text-indent: 101%;   /* 文字縮排，利用百分比值讓文字超過容器寬度，使其隱藏在容器外。 */
+    overflow: hidden;    /* 超出部分隱藏，容器尺寸外的文字將被隱藏。 */
+    white-space: nowrap; /* 禁用自動換行，文字將在同一行内顯示，不會自動換行。 */
     background-image: url('../images/hexschool-logo.svg');  /*背景圖*/
-    background-size: cover;
-    width: 150.061px; /*原圖寬度*/
-    height: 36px; /*原圖高度*/
+    background-repeat: no-repeat;  
+    background-size: contain;
 }
 .menuBtn{
     display: flex;
-    justify-content: flex-end;   
+    justify-content: flex-end;
 }
 .menuBtn>li>a{
-    text-decoration: none;
     text-align: center;
     color: #00251A;
-    padding: 10px 30px;
+    padding: 24px;
     font-weight: 600;
 }
 .menuBtn a {
@@ -77,29 +79,36 @@ header .snsBar .border{
     position: relative;
     overflow: hidden;
 }
+.menuBtn>li{
+    margin: 6px 0px;  /*給底線留空間*/ 
+}
+.menuBtn>li:hover,.menuBtn>li:active{
+    margin: 4px 0px;
+    border-bottom:4px solid #00cc99;
+    transform: translateY(4px); 
+    transition: all 0.3s;
+}
 .dropDown-open{     /*下拉子選單外觀*/ 
-    width: 140px;
+    width: 120px;
     background-color: #FCFCFC;
     border: none;
     border-radius: 5px;
     text-align: center;
     position: absolute;
     padding: 10px 0;
-    margin-top: 8px;
+    margin: 1px auto;
     z-index: 5;
     box-shadow: rgba(30, 30, 30, 0.25) 0px 5px 15px;  
 }
 .dropDown-open li a{ 
     color: 	#4F4F4F;
     font-size: 14px;
-    padding: 12px 0;
+    padding: 10px 0;
 }
-
 .dropDown> a:hover,.dropDown> a.active{ 
     color: #00cc99;   /*按鈕保持綠色效果*/
     transition: all 0.3s;  
 }
-
 .dropDown-open>li a:hover{    /*下拉子滑鼠效果 背景淺灰字變綠色加粗*/
     background-color: #cccccc30; 
     color: #00cc99; 
@@ -137,7 +146,7 @@ h2{
     top:50%;
     transform: translateY(-50%);
 }
-.w{
+.white{
     color: #000;
     background-color: rgba(255, 255, 255, 0.15);
     box-shadow: 0px 24px 30px 0px rgba(0, 0, 0, 0.15), 0px 1px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px -1px 1px 0px rgba(255, 255, 255, 0.3) inset;
@@ -264,11 +273,11 @@ caption{
     margin: 0 auto;
     overflow: hidden;
 }
-#submitLeft{
+.submitLeft{
     width:420px;
     float:left;
 }
-#submitRight{
+.submitRight{
     width:420px;
     float: right;
 }
@@ -296,7 +305,7 @@ input{
     margin-bottom: 10px;
     outline: #00654c;
 }
-#submitBtn{ 
+.submitBtn{ 
     width: 90px;
     height: 35px;
     box-sizing: border-box;
@@ -307,14 +316,14 @@ input{
     margin-top: 10px; 
     float: right;   
 }
-#submitBtn:hover{
+.submitBtn:hover{
     cursor: pointer;
     background-color: transparent;
     border: 1.5px solid #FFF;
     color: #FFF;
     transition: all 0.3s;
 }
-#submitBtn:active{
+.submitBtn:active{
     background-color:hwb(163 0% 85% / 0.206) ;
 }
 ::placeholder {
@@ -326,6 +335,15 @@ input{
     background: #fff;
     padding: 20px 50px;
     overflow: hidden; /* 清除浮動 */
+}
+.contactUs h1{ 
+    font-size: 40px;
+    text-indent: 101%;   /* 文字縮排，利用百分比值讓文字超過容器寬度，使其隱藏在容器外。 */
+    overflow: hidden;    /* 超出部分隱藏，容器尺寸外的文字將被隱藏。 */
+    white-space: nowrap; /* 禁用自動換行，文字將在同一行内顯示，不會自動換行。 */
+    background-image: url('../images/hexschool-logo.svg');  /*背景圖*/
+    background-repeat: no-repeat;  
+    background-size: contain;
 }
 .contactUs img {
     margin-top: 10px;
