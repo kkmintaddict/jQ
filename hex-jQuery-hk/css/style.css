@@ -45,7 +45,7 @@ header .snsBar .border{
     filter: brightness(135%);
 }
 .navBar{ 
-    padding: 0px 40px 0px 50px;
+    padding: 8px 40px 8px 50px;
     background: #FFF;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);  
     display: flex;
@@ -78,15 +78,6 @@ header .snsBar .border{
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
-}
-.menuBtn>li{
-    margin: 6px 0px;  /*給底線留空間*/ 
-}
-.menuBtn>li:hover,.menuBtn>li:active{
-    margin: 4px 0px;
-    border-bottom:4px solid #00cc99;
-    transform: translateY(4px); 
-    transition: all 0.3s;
 }
 .dropDown-open{     /*下拉子選單外觀*/ 
     width: 120px;

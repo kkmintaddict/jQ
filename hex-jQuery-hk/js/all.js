@@ -5,7 +5,7 @@ $(document).ready(function() {
     $('.dropDown>a').removeClass("active"); // 移除所有按鈕的 active
     $(this).find('a').toggleClass("active"); // 按鈕保持綠色
     $('.dropDown-open').hide();
-    $(this).find('.dropDown-open').delay(100).slideToggle(250);
+    $(this).find('.dropDown-open').delay(100).slideDown(250);
     event.stopPropagation(); // 避免點擊事件傳送
 
     $('.dropDown-open a').click(function(event) {
